@@ -15,42 +15,164 @@
 	</head>
 	<body>
 		<header>
-			<h1 class="header-items">Home</h1>
-			<h1 class="header-items">About Me</h1>
-			<h1 class="header-items">Projects</h1>
-			<h1 class="header-items">Contact Me</h1>
+			<a id="home-button" href="#">
+				<h1 class="header-items">Home</h1>
+			</a>
+			<a href="#about-me">
+				<h1 class="header-items">About Me</h1>
+			</a>
+			<a href="#featured-project">
+				<h1 class="header-items">Featured</h1>
+			</a>
+			<a href="#other-projects">
+				<h1 class="header-items">Projects</h1>
+			</a>
+			<a href="#contact-me">
+				<h1 class="header-items">Contact Me</h1>
+			</a>
 		</header>
 		<section class="container-fluid" id="about-me">
 			<div class="row">
-				<div class="col-6 row">
-					<h1 class="col-6" id="about-me-title">About Me</h1>
+				<div class="col-6 row first-section">
+					<h1 class="col-12 first-section" id="about-me-title">
+						Hi, I'm Blake Wright
+					</h1>
 					<img
 						id="avatar"
-						class="col-6"
+						class=""
 						src="./assets/images/BlakeWright.jpg"
-						alt=""
+						alt="avatar"
 					/>
 				</div>
-				<div class="col-6">
-					<h2>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni impedit at
-						excepturi maiores! Veniam qui, sapiente vitae maiores eos alias, dolorem
-						cumque ipsam, voluptatum fugit ducimus labore possimus quis asperiores?
+				<div class="col-6 first-section">
+					<h2 class="align-self-center" id="about-me-para">
+						I am a current full stack coding bootcamp student who loves to learn new
+						technologies and is always improving my craft. Check out some of my work
+						below!
 					</h2>
 				</div>
 			</div>
 		</section>
 		<section class="container-fluid" id="featured-project">
 			<h1>featured project</h1>
+			<div class="row">
+				<div class="col-6 row">
+					<h1 class="col-12">It's Jeopardy!</h1>
+					<img
+						id="trivia-image"
+						src="./assets/images/ihearttrivia.jpg"
+						alt="i heart trivia"
+					/>
+					<h3 class="col-12">
+						Do you also love trivia? Check out this Jeopardy project made with just
+						front-end JS!
+					</h3>
+				</div>
+				<div id="right-side-featured-project" class="col-6 row">
+					<h2 class="col-12">
+						This group project (a single player game of Jeopardy), will regenerate a
+						new board from hundreds of thousands of available questions each time you
+						play. Thanks to jservice.io, my group and I created this application in
+						about 2 weeks time. This taught us a lot about API fetch calls, async
+						functions, working as a team in the development space, and many other
+						useful skills. See for yourself and click below!
+					</h2>
+					<a href="https://btdubbzzz.github.io/jeopardy-game/"
+						><img
+							id="jeopardy-screenshot"
+							src="./assets/images/jeopardyscreenshot.JPG"
+							alt="jeopardy application screenshot"
+					/></a>
+					<a href="https://github.com/BTDubbzzz/jeopardy-game">
+						<p class="text-muted">Link to GitHub repo</p>
+					</a>
+				</div>
+			</div>
 		</section>
 		<section class="container-fluid" id="other-projects">
-			<h1>other Projects</h1>
+			<h1>other projects</h1>
+			<div class="container-fluid d-flex justify-content-center">
+				<h1 id="my-work-title">my work</h1>
+			</div>
+			<div class="card-deck">
+				<div class="card">
+					<a href="https://btdubbzzz.github.io/Weather-Dashboard/">
+						<img
+							src="./assets/images/weatherscreenshot.JPG"
+							class="card-img-top"
+							alt="weather application screenshot"
+						/>
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Weather Dashboard Application</h5>
+						<p class="card-text">
+							Use the weather dashboard app to get the current conditions plus a 5 day
+							forecast for any city using the search bar. This application uses
+							localstorage to remember a user's recent city searches as well. Check it
+							out by clicking the image!
+						</p>
+						<a href="https://github.com/BTDubbzzz/Weather-Dashboard">
+							<p class="card-text">
+								<small class="text-muted">Link to GitHub repo</small>
+							</p>
+						</a>
+					</div>
+				</div>
+				<div class="card">
+					<a href="https://btdubbzzz.github.io/Password-Generator/">
+						<img
+							src="./assets/images/passwordgenscreenshot.JPG"
+							class="card-img-top"
+							alt="password generator application screenshot"
+						/>
+					</a>
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							This card has supporting text below as a natural lead-in to additional
+							content.
+						</p>
+						<a href="https://github.com/BTDubbzzz/Password-Generator">
+							<p class="card-text">
+								<small class="text-muted">Link to GitHub repo</small>
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section id="contact-me" class="container-fluid">
 			<h1>contact me</h1>
+			<div class="container-fluid d-flex justify-content-center">
+				<h1 id="contact-info-title">contact info</h1>
+			</div>
+			<div id="contact-info" class="d-flex justify-content-between">
+				<a href="https://www.linkedin.com/in/blake-wright-6409b818a/">
+					<h3>LinkedIn</h3>
+				</a>
+				<h3>wright.blake.t@gmail.com</h3>
+				<a href="https://github.com/BTDubbzzz">
+					<h3>GitHub</h3>
+				</a>
+			</div>
+			<div class="container-fluid d-flex justify-content-center">
+				<div id="resume-title">
+					<h4>current resume</h4>
+					<a
+						id="resume-link"
+						href="./assets/documents/Blake Wright Resume.docx"
+						download="Blake Wright resume"
+					>
+						<p>download current resume</p>
+					</a>
+				</div>
+			</div>
 		</section>
 		<footer>
 			<h1>footer</h1>
+			<div id="copyright-section">
+				<h4>Blake Wright Copyright 2021</h4>
+			</div>
 		</footer>
 		<script src="./assets/js/script.js"></script>
 	</body>
